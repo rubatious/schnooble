@@ -1,17 +1,21 @@
-# React Wordle
+# Schnoob Wordle
 
 This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
 
-[**Try out the demo!**](https://reactle.vercel.app/)
+[**Try out the demo!**](https://rubatious.github.io/schnooble/)
 
 ## Build and run
+
+The app will rebuild and deploy whenever new changes are pushed to main. 
+- Update the `WORDS` array in [src/constants/wordlist.ts](src/constants/wordlist.ts) to include words of any of the variable lengths desired.
+- Update the `VALID_GUESSES` array in [src/constants/validGuesses.ts](src/constants/validGuesses.ts) to include words of any of the variable lengths desired.
 
 ### To Run Locally:
 
 Clone the repository and perform the following command line actions:
 
 ```bash
-$> cd react-wordle
+$> cd schnooble
 $> npm install
 $> npm run start
 ```
@@ -21,8 +25,8 @@ $> npm run start
 #### Development
 
 ```bash
-$> docker build -t reactle:dev -f docker/Dockerfile .
-$> docker run -d -p 3000:3000 --name reactle-dev reactle:dev
+$> docker build -t schnooble:dev -f docker/Dockerfile .
+$> docker run -d -p 3000:3000 --name schnooble-dev schnooble:dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in browser.
@@ -30,8 +34,8 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 #### Production
 
 ```bash
-$> docker build --target=prod -t reactle:prod -f docker/Dockerfile .
-$> docker run -d -p 80:8080  --name reactle-prod reactle:prod
+$> docker build --target=prod -t schnooble:prod -f docker/Dockerfile .
+$> docker run -d -p 80:8080  --name schnooble-prod schnooble:prod
 ```
 
 Open [http://localhost](http://localhost) in browser. See the [entry in the FAQ](#why-does-sharing-of-results-not-work) below about requirements for sharing of results.
