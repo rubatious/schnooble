@@ -5,7 +5,7 @@ def get_words(filename):
     seenwords = set()
     for line in lines:
         word = line.strip().lower()
-        if word in seenwords or word == '':
+        if word in seenwords or word == '' or not word.isalpha():
             continue
         else:
             words.append(word)
