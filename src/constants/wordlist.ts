@@ -78,4 +78,13 @@ export const WORDS = [
   'prantls',
   'meesum',
   'costas',
+  'njood',
+  'skouch',
+  'meabal',
+  'hmart',
+  'eggtart',
+  'vivaan',
+  'bristol',
+  'hoagie',
+  'scrungly',
 ]
