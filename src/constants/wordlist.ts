@@ -87,4 +87,8 @@ export const WORDS = [
   'bristol',
   'hoagie',
   'scrungly',
+  'voulas',
+  'mabo',
+  'ascend',
+  'bagel',
 ]
